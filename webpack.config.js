@@ -159,7 +159,8 @@ module.exports = {
                         return isDev ? 'fonts/[name][ext]' : 'fonts/[name].[contenthash][ext]';
                     },
                 },
-            },
+            }
+            
         ]
     },
 }

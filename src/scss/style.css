@@ -45,11 +45,11 @@ body {
     width: 100%;
 }
 
-.header-left {
+.header__left {
     display: flex;
 }
 
-.header-right {
+.header__right {
     display: flex;
 }
 
