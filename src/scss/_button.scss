@@ -1,0 +1,105 @@
+@import './vendors';
+
+.button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $button-color;
+    border: 0;
+    padding: 0 0;
+    cursor: pointer;
+
+    &--icon-burger {
+        background-image: url('../assets/menu_icon.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 16px;
+    }
+
+    &--icon-feedback {
+        background-image: url('../assets/feedback_icon.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: auto 0;
+
+        &::before {
+            display: block;
+            content: "";
+
+            position: relative;
+            right: 20px;
+
+            width: 2px;
+            height: 40px;
+            background: $divider-color;
+            border-radius: 1px;
+        }
+    }
+
+    &--icon-status {
+        background-image: url('../assets/status_icon.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 16px;
+    }
+
+    &--icon-call {
+        background-image: url('../assets/call_icon.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 16px;
+        margin-right: 0;
+    }
+
+    &--icon-message {
+        background-image: url('../assets/message_icon.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 16px;
+        margin-right: 0;
+    }
+
+    &--icon-contacts {
+        background-image: url(../assets/contacts_icon.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 16px;
+        margin-right: 42px;
+    }
+
+    &--display-isHidden {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .button{
+        &--display-isHidden {
+            display: inline-block;
+        }
+
+        &--icon-burger::after {
+            display: block;
+            content: "";
+        
+            width: 2px;
+            height: 40px;
+            background: $divider-color;
+            border-radius: 1px;
+        
+            margin-left: 60px;
+        }
+        
+        &--icon-burger {
+            margin-right: 42px;
+        }
+    }
+}
+
+@media (min-width: 1120px) {
+    .button {
+        &--icon-feedback::before {
+            display: none;
+        }
+    }
+}

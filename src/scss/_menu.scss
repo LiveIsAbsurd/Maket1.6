@@ -1,0 +1,37 @@
+.menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    
+    padding-left: 16px;
+    &__item {
+        width: auto;
+        white-space: nowrap;
+        margin: auto 20px auto 0;
+        &--active-border {
+            padding: 8px 9px 9px 16px;
+            background: $menu-active-bg-item-color;
+            border: 2px solid $menu-active-bordeg-item-color;
+            border-radius: 6px;
+        }
+    }
+    a {
+        font-family: 'TT Lakes';
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: $menu-item-color;
+        text-decoration: none;
+    }
+    &__gradient {
+        position: absolute;
+        right: 0;
+        top: 165px;
+        height: 40px;
+        width: 24px;
+        background: linear-gradient(270deg, $menu-gradient-start 16.84%, $menu-gradient-end 100%);
+    }
+}
