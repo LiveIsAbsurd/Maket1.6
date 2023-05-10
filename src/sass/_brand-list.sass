@@ -1,0 +1,77 @@
+.brand-list 
+    height: 72px
+    padding: 0
+    margin: 0
+    list-style: none
+    &__item 
+        & a 
+            box-sizing: border-box
+
+            display: flex
+            justify-content: space-between
+
+            width: 240px
+            background-color: $header-bg-color
+            padding: 16px
+
+            border: 1px solid $brand-list-item-border-color
+            border-radius: 6px
+            color: $header-bg-color
+
+    &__button 
+        margin-top: 16px
+
+        &--hidden 
+            display: none
+
+    &__gradient 
+        position: absolute
+        top: 0
+        right: 0
+        z-index: 1
+        width: 24px
+        height: 73px
+
+@media (min-width: 500px) 
+    .brand-list
+        display: grid
+        grid-template-columns: 220px 220px
+        grid-column-gap: 24px
+        grid-row-gap: 16px
+        justify-content: center
+        align-items: center
+
+        overflow: hidden
+
+        &__gradient 
+            display: none
+        
+        &__item 
+            width: auto
+        
+        &--close 
+            height: 170px
+
+        &--open 
+            height: max-content
+
+        &__button--hidden 
+            display: block
+
+@media (min-width: 768px) 
+    .brand-list 
+        grid-template-columns: 224px 224px 224px
+    
+@media (min-width: 1070px) 
+    .brand-list 
+        grid-template-columns: 240px 240px 240px 240px
+        grid-column-gap: 32px
+    
+@media (min-width: 1350px) 
+    .brand-list 
+        grid-template-columns: 240px 240px 240px 240px 240px
+
+
+@media (min-width: 1440px) 
+    .brand-list 
+        grid-template-columns: 240px 240px 240px 240px

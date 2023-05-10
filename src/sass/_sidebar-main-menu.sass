@@ -1,0 +1,30 @@
+.sidebar-main-menu
+    list-style: none
+    padding: 0
+    margin-top: 50px
+    padding-left: 24px
+    & li
+        margin-bottom: 32px
+    & a
+        text-decoration: none
+        font-family: 'TT Lakes'
+        font-size: 16px
+        line-height: 24px
+        letter-spacing: -0.2px
+        color: $text-color
+        &:hover
+            color: $sidebar-active-color
+    & .sidebar-main-menu--active
+        & a
+            color: $menu-item-color
+        &::before
+            display: inline-block
+            content: ""
+            background: #41F6D7
+            border-top-right-radius: 5px
+            border-bottom-right-radius: 5px
+
+            width: 4px
+            height: 26px
+            position: absolute
+            left: 0

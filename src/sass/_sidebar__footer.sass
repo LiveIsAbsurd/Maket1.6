@@ -1,0 +1,38 @@
+.sidebar-footer
+    position: absolute
+    bottom: 0
+    padding-left: 24px
+    padding-bottom: 32px
+    &__mail
+        font-family: 'TT Lakes'
+        font-size: 16px
+        line-height: 24px
+        letter-spacing: -0.2px
+        color: $text-color
+
+        margin-top: 16px
+    &__phone
+        font-family: 'TT Lakes'
+        font-size: 24px
+        line-height: 32px
+        letter-spacing: -0.6px
+        color: $text-color
+        font-weight: 700
+
+        margin-top: 12px
+    &__lang-choice
+        margin-top: 40px
+        & a
+            font-family: 'TT Lakes'
+            font-size: 16px
+            line-height: 24px
+            letter-spacing: -0.2px
+            color: $text-color
+
+            text-decoration: none
+
+            margin-right: 7px
+            &:hover
+                color: $sidebar-active-color
+            &.sidebar-footer__lang-choice--active
+                color: $menu-item-color

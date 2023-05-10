@@ -1,0 +1,19 @@
+.open-more-button 
+    background-color: inherit
+    border: 0
+    font-family: 'TT Lakes'
+    font-size: 16px
+    line-height: 24px
+    letter-spacing: -0.2px
+    color: $text-color
+    &::before 
+        display: inline-block
+        content: ""
+        background-image: url(../assets/further.svg)
+        
+        width: 7px
+        height: 10px
+        margin-right: 16px
+    
+    &--open::before
+        transform: rotate(180deg)
