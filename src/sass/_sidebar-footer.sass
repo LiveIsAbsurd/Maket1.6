@@ -10,7 +10,7 @@
         letter-spacing: -0.2px
         color: $text-color
 
-        margin-top: 16px
+        margin-top: 12px
     &__phone
         font-family: 'TT Lakes'
         font-size: 24px
@@ -19,9 +19,8 @@
         color: $text-color
         font-weight: 700
 
-        margin-top: 12px
+        margin-bottom: 8px
     &__lang-choice
-        margin-top: 40px
         & a
             font-family: 'TT Lakes'
             font-size: 16px
@@ -36,3 +35,8 @@
                 color: $sidebar-active-color
             &.sidebar-footer__lang-choice--active
                 color: $menu-item-color
+
+    @madia (min-width: 768px)
+    .sidebar-footer
+        &__phone
+            margin-bottom: 40px
