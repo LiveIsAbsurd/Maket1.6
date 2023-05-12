@@ -1,11 +1,24 @@
 .sidebar 
     position: fixed
+    z-index: 100
     width: 320px
     height: 100%
+    background-color: $header-bg-color
 
     box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2)
 
+    transition: transform 0.3s
+
     transform: translateX(-400px)
+    &--open
+        position: absolute
+        transform: translateX(0)
+        backdrop-filter: blur(1000px)
+
+    .side--blur
+        width: 1000px
+        height: 1000px
+        opacity: 0.8
 
 @media (min-width: 1440px) 
     .sidebar 

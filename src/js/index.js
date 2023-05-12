@@ -1,32 +1,21 @@
-import Swiper, { Pagination } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/pagination';
+let sidebarContainer = document.querySelector('.sidebar-container');
+let sidebar = sidebarContainer.querySelector('.sidebar');
+let sidebarOpenButton = document.querySelector('.button--icon-burger');
+let sidebarCloseButton = document.querySelector('.button--icon-close');
 
-if (window.innerWidth < 500) {
-    const swiper = new Swiper('.swiper', {
-        modules: [Pagination],
-        slidesPerView: 2,
-        spaceBetween: 190,
+sidebarOpenButton.addEventListener('click', function () {
+    sidebarContainer.classList.toggle('sidebar-container--blur');
+    sidebar.classList.toggle('sidebar--open');
+})
 
-        pagination: {
-        el: '.swiper-pagination',
-        },
-    });
-}
+sidebarCloseButton.addEventListener('click', function () {
+  sidebar.classList.toggle('sidebar--open');
+  sidebarContainer.classList.toggle('sidebar-container--blur');
+})
 
-let menu = document.querySelector('.sidebar-main-menu');
-let menuItem = menu.querySelectorAll('li');
-
-
-for (let i = 0; i < menuItem.length; i++){
-    menuItemHandler(i);
-}
-    
-function menuItemHandler (item) {
-    menuItem[item].addEventListener('click', function () {
-        for (let i = 0; i < menuItem.length; i++) {
-            menuItem[i].classList.remove('sidebar-main-menu--active');
-        }
-        menuItem[item].classList.add('sidebar-main-menu--active');
-    })
-}
+sidebarContainer.addEventListener('click', function (evt) {
+  if (!evt.target.closest('.sidebar')) {
+    sidebar.classList.toggle('sidebar--open');
+    sidebarContainer.classList.toggle('sidebar-container--blur');
+  }
+})
