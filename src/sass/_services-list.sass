@@ -1,0 +1,81 @@
+.services-list 
+    height: 200px
+    padding: 0
+    margin: 0
+    list-style: none
+    &__container
+        box-sizing: border-box
+        width: 240px  
+        height: 200px
+        background-color: $header-bg-color
+        padding: 16px
+
+        border: 1px solid $brand-list-item-border-color
+        border-radius: 6px
+        color: $header-bg-color
+        > div
+            margin-bottom: 16px
+
+        div
+            font-family: 'TT Lakes'
+            font-size: 14px
+            line-height: 18px
+            letter-spacing: 0.2px
+            color: $text-color
+            &:nth-child(3)
+                display: inline-block
+            &:nth-child(4)
+                display: inline-block
+
+    &__header
+        font-family: 'TT Lakes'
+        font-size: 14px
+        line-height: 16px
+        color: $menu-item-color
+        mix-blend-mode: normal
+        opacity: 0.5
+            
+    &__button
+        margin-left: 9px
+        width: 110px
+        height: 32px
+        background-color: $button-color
+        border-radius: 16px
+        border: 0
+        padding: 0
+        span
+            font-family: 'TT Lakes'
+            font-size: 12px
+            line-height: 24px
+            text-align: right
+            letter-spacing: -0.15px
+            text-transform: uppercase
+            font-weight: 700
+            color: #FFFFFF
+            &::after
+                display: inline-block
+                content: ''
+                width: 7px
+                height: 9px
+                background-image: url(../assets/dropdown_white.svg)
+                margin-left: 17px
+
+
+    &__gradient 
+        position: absolute
+        top: 0
+        right: 0
+        z-index: 1
+        width: 24px
+        height: 200px
+
+@media (min-width: 500px)
+    .services-list
+        display: block
+        height: fit-content
+        background-color: $header-bg-color
+        margin-right: 24px
+        &__container
+            width: 100%
+        &__header
+            display: none
