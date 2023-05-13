@@ -1,7 +1,9 @@
 .services-header
+    padding: 0
     display: none
-    margin-left: 40px
     list-style: none
+    padding-left: 16px
+    padding-right: 16px
     li
         display: inline-block
         font-family: 'TT Lakes'
@@ -10,11 +12,12 @@
         color: #7E7E82
         mix-blend-mode: normal
         opacity: 0.72;
-        &:nth-child(2)
-            margin-left: 245px
-        &:nth-child(3)
-            margin-left: 60px
             
 @media (min-width: 500px)
     .services-header
-        display: block
+        display: grid
+        grid-template-columns: 2fr 1fr 1fr 1fr
+
+@media (min-width: 768px)
+    .services-header
+        grid-template-columns: 3fr 1fr 1fr 1fr
