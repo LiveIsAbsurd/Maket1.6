@@ -1,0 +1,40 @@
+.services-text
+    font-family: 'TT Lakes'
+    font-size: 14px
+    line-height: 20px
+    letter-spacing: 0.2px
+    color: #1B1C21
+    font-weight: 200
+
+    width: 280px
+    a
+        display: block
+        text-decoration: none
+        font-family: 'TT Lakes'
+        font-size: 14px
+        line-height: 20px
+        letter-spacing: 0.2px
+        color: $text-color
+        font-weight: 600
+
+        width: 200px
+
+        margin-top: 20px
+        &::after
+            display: inline-block
+            position: relative
+            content: ''
+            background: url(../assets/arrow_red.svg) no-repeat center
+            margin-left: 10px
+
+            width: 6px
+            height: 1em
+            bottom: -4px
+            
+
+@media ( min-width: 768px)
+    .services-text
+        width: 420px
+        a
+            width: auto
+    
