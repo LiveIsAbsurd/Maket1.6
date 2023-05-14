@@ -1,0 +1,353 @@
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./js/index.js":
+/*!*********************!*\
+  !*** ./js/index.js ***!
+  \*********************/
+/***/ (() => {
+
+var sidebarContainer = document.querySelector('.sidebar-container');
+var sidebar = sidebarContainer.querySelector('.sidebar');
+var sidebarOpenButton = document.querySelector('.button--icon-burger');
+var sidebarCloseButton = document.querySelector('.button--icon-close');
+sidebarOpenButton.addEventListener('click', function () {
+  sidebarContainer.classList.toggle('sidebar-container--blur');
+  sidebar.classList.toggle('sidebar--open');
+});
+sidebarCloseButton.addEventListener('click', function () {
+  sidebar.classList.toggle('sidebar--open');
+  sidebarContainer.classList.toggle('sidebar-container--blur');
+});
+sidebarContainer.addEventListener('click', function (evt) {
+  if (!evt.target.closest('.sidebar')) {
+    sidebar.classList.toggle('sidebar--open');
+    sidebarContainer.classList.toggle('sidebar-container--blur');
+  }
+});
+
+/***/ }),
+
+/***/ "./js/main.js":
+/*!********************!*\
+  !*** ./js/main.js ***!
+  \********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _sass_main_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sass/main.sass */ "./sass/main.sass");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../index.html */ "./index.html");
+/* harmony import */ var _swiperInit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./swiperInit */ "./js/swiperInit.js");
+/* harmony import */ var normalize_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! normalize.css */ "../node_modules/normalize.css/normalize.css");
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./index */ "./js/index.js");
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_index__WEBPACK_IMPORTED_MODULE_4__);
+
+
+
+
+
+
+/***/ }),
+
+/***/ "./js/swiperInit.js":
+/*!**************************!*\
+  !*** ./js/swiperInit.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "../node_modules/swiper/swiper.esm.js");
+/* harmony import */ var swiper_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/css */ "../node_modules/swiper/swiper.min.css");
+/* harmony import */ var swiper_css_pagination__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper/css/pagination */ "../node_modules/swiper/modules/pagination/pagination.min.css");
+
+
+
+
+if (window.innerWidth < 500) {
+  var swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper', {
+    modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination],
+    slidesPerView: 2,
+    spaceBetween: 190,
+    pagination: {
+      el: '.swiper-pagination'
+    }
+  });
+}
+
+/***/ }),
+
+/***/ "./index.html":
+/*!********************!*\
+  !*** ./index.html ***!
+  \********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/html-loader/dist/runtime/getUrl.js */ "../node_modules/html-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./assets/cps_logo.svg */ "./assets/cps_logo.svg"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ./img/lenovo.png */ "./img/lenovo.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ./assets/brend_icon.svg */ "./assets/brend_icon.svg"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(/*! ./img/bosh.png */ "./img/bosh.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_4___ = new URL(/* asset import */ __webpack_require__(/*! ./img/samsung.png */ "./img/samsung.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_5___ = new URL(/* asset import */ __webpack_require__(/*! ./img//bosh.png */ "./img/bosh.png"), __webpack_require__.b);
+// Module
+var ___HTML_LOADER_REPLACEMENT_0___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_0___);
+var ___HTML_LOADER_REPLACEMENT_1___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_1___);
+var ___HTML_LOADER_REPLACEMENT_2___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_2___);
+var ___HTML_LOADER_REPLACEMENT_3___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_3___);
+var ___HTML_LOADER_REPLACEMENT_4___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_4___);
+var ___HTML_LOADER_REPLACEMENT_5___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_5___);
+var code = "<!DOCTYPE html>\n<html lang=\"ru\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Макет 1.3</title>\n</head>\n<body class=\"body\">\n\n    <div class=\"sidebar-container\">\n        <div class=\"sidebar\">\n            <header class=\"sidebar-header\">\n                <div class=\"sidebar-header__right\">\n                    <button class=\"button button--icon-close\"></button>\n                    <img src=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" alt=\"Лого CPS\" class=\"header--logo\">\n                </div>\n            \n                <button class=\"button button--icon-search\"></button>\n            </header>\n            \n            \n            <nav>\n                <ul class=\"sidebar-main-menu\">\n                    <li><a href=\"#\">Ремонт техники</a></li>\n                    <li class=\"sidebar-main-menu--active\"><a href=\"#\">Услуги и сервисы</a></li>\n                    <li><a href=\"#\">Корпоративным клиентам</a></li>\n                    <li><a href=\"#\">Продавцам техники</a></li>\n                    <li><a href=\"#\">Партнёрам</a></li>\n                    <li><a href=\"#\">Производителям</a></li>\n                    <li><a href=\"#\">Наши сервисные центры</a></li>\n                    <li><a href=\"#\">Контакты</a></li>\n                </ul>\n            </nav>\n            \n            \n            <div class=\"sidebar-footer\">\n                <button class=\"button button--icon-call\"></button>\n                <button class=\"button button--icon-message\"></button>\n                <button class=\"button button--icon-contacts\"></button>\n            \n                <div class=\"sidebar-footer__mail\">mail@cps.com</div>\n                <div class=\"sidebar-footer__phone\">8 800 890 8900</div>\n            \n                <div class=\"sidebar-footer__lang-choice\">\n                    <a href=\"#\" class=\"sidebar-footer__lang-choice--active\">RU</a>\n                    <a href=\"#\">EN</a>\n                    <a href=\"#\">CH</a>\n                </div>\n            </div>\n        </div>\n    </div>\n\n    <header class=\"header\">\n        <div class=\"header__left\">\n            <button class=\"button button--icon-burger\"></button>\n\n            <img class=\"header__left--logo\" src=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" alt=\"Логотип SPC\">\n        </div>\n\n        <div class=\"header__right\">\n            <button class=\"button button--icon-call button--display-isHidden\"></button>\n            <button class=\"button button--icon-message button--display-isHidden\"></button>\n            <button class=\"button button--icon-contacts button--display-isHidden\"></button>\n            \n            <button class=\"button button--icon-feedback\"></button>\n            <button class=\"button button--icon-status\"></button>\n        </div>\n    </header>\n\n    <main class=\"main\">\n        <section>\n        <div class=\"main-header\">\n            <h1 class=\"main-header__text\">Услуги и сервисы</h1>\n            <div class=\"main-button-container\">\n                <button>\n                    <span>Оставить заявку</span>\n                    <i class=\"button button--icon-feedback\"></i>\n                </button>\n                <button>\n                    <span>Статус ремонта</span>\n                    <i class=\"button button--icon-status\"></i>\n                </button>\n            </div>\n        </div>\n        <nav>\n            <ul class=\"menu\">\n                <li class=\"menu__item menu__item--active-border\"><a href=\"#\">Ремонтируемые устройства</a></li>\n                <li class=\"menu__item\"><a href=\"#\">Дополнительные услуги</a></li>\n                <li class=\"menu__item\"><a href=\"#\">Цены на услуги</a></li>\n                <li class=\"menu__item\"><a href=\"#\">Адреса сервисных центров</a></li>\n                <li class=\"menu__item\"><a href=\"#\">Специальные цены</a></li>\n                <li class=\"menu__item\"><a href=\"#\">Отзывы</a></li>\n            </ul>\n            <div class=\"menu__gradient list-gradient\"></div>\n        </nav>\n        \n        <div class=\"text-block\">\n            <div class=\"text-block__contaner\">\n                <div class=\"text-block__text\">\n                    <p class=\"text-block__paragraph\">\n                        Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.\n                    </p>\n                    <p class=\"text-block__paragraph\">\n                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.\n                    </p>\n                    <p class=\"text-block__paragraph\">Lorem ipsum dolor sit amet consectetur adipisicing elit. In vitae nam ipsa suscipit sunt voluptas, ratione dignissimos! Rerum, cum. Nostrum aliquam, deserunt nulla harum sint repellendus omnis autem blanditiis nobis!\n                    Reiciendis id at voluptatibus repellat iste in consequatur praesentium delectus saepe autem corporis incidunt eos, animi nemo molestiae repudiandae veritatis laboriosam officia eveniet modi perferendis dignissimos cum. Culpa, ad porro.\n                    Consectetur, quo accusamus. Iusto iure quod deleniti saepe voluptate rem adipisci ea rerum. Quo excepturi reprehenderit, tempora quos fuga numquam, recusandae totam est quisquam voluptates cumque porro explicabo voluptatum velit.\n                    Modi voluptatibus velit perspiciatis atque autem ducimus hic in veritatis nostrum quidem eum quo, fugiat commodi illum, voluptatem asperiores magnam ipsa expedita. Sit, minus! Ullam aliquam ex est quia consequuntur.\n                    Voluptatem commodi, ducimus tempora veniam illum eum sequi tenetur asperiores ad. Velit tempora hic ea explicabo cupiditate! Modi, hic! Autem nemo nesciunt deleniti quos molestiae adipisci obcaecati doloremque, vitae tempore?</p>\n                </div>\n\n                <button class=\"text-block__button open-more-button\">Читать далее</button>\n            </div>\n            <div class=\"text-block__image\"></div>\n        </div>\n        </section>\n\n        <section>\n        <div class=\"list-header\">\n            <h2 class=\"list-header__text\">Ремонт техники различных брендов</h2>\n        </div>\n        \n        <div class=\"swiper list-container\">\n        \n            <ul class=\"swiper-wrapper brand-list list--close\">\n    \n                <li class=\"swiper-slide brand-list__item\">\n                    <a href=\"#\">\n                        <img src=\"" + ___HTML_LOADER_REPLACEMENT_1___ + "\" alt=\"\">\n                        <img src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"\">\n                    </a>\n                </li>\n                <li class=\"swiper-slide brand-list__item\">\n                    <a href=\"#\">\n                        <img src=\"" + ___HTML_LOADER_REPLACEMENT_3___ + "\" alt=\"\">\n                        <img src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"\">\n                    </a>\n                </li>\n                <li class=\"swiper-slide brand-list__item\">\n                    <a href=\"#\">\n                        <img src=\"" + ___HTML_LOADER_REPLACEMENT_4___ + "\" alt=\"\">\n                        <img src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"\">\n                    </a>\n                </li>\n                <li class=\"swiper-slide brand-list__item\">\n                    <a href=\"#\">\n                        <img src=\"" + ___HTML_LOADER_REPLACEMENT_1___ + "\" alt=\"\">\n                        <img src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"\">\n                    </a>\n                </li>\n                <li class=\"swiper-slide brand-list__item\">\n                    <a href=\"#\">\n                        <img src=\"" + ___HTML_LOADER_REPLACEMENT_3___ + "\" alt=\"\">\n                        <img src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"\">\n                    </a>\n                </li>\n                <li class=\"swiper-slide brand-list__item\">\n                    <a href=\"#\">\n                        <img src=\"" + ___HTML_LOADER_REPLACEMENT_4___ + "\" alt=\"\">\n                        <img src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"\">\n                    </a>\n                </li>\n                <li class=\"swiper-slide brand-list__item\">\n                    <a href=\"#\">\n                        <img src=\"" + ___HTML_LOADER_REPLACEMENT_5___ + "\" alt=\"\">\n                        <img src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"\">\n                    </a>\n                </li>\n                <li class=\"swiper-slide brand-list__item\">\n                    <a href=\"#\">\n                        <img src=\"" + ___HTML_LOADER_REPLACEMENT_1___ + "\" alt=\"\">\n                        <img src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"\">\n                    </a>\n                </li>\n                <li class=\"swiper-slide brand-list__item\">\n                    <a href=\"#\">\n                        <img src=\"" + ___HTML_LOADER_REPLACEMENT_4___ + "\" alt=\"\">\n                        <img src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"\">\n                    </a>\n                </li>\n                <li class=\"swiper-slide brand-list__item\">\n                    <a href=\"#\">\n                        <img src=\"" + ___HTML_LOADER_REPLACEMENT_3___ + "\" alt=\"\">\n                        <img src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"\">\n                    </a>\n                </li>\n                <li class=\"swiper-slide brand-list__item\">\n                    <a href=\"#\">\n                        <img src=\"" + ___HTML_LOADER_REPLACEMENT_1___ + "\" alt=\"\">\n                        <img src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"\">\n                    </a>\n                </li>\n\n                <li class=\"swiper-slide\"></li>\n    \n            </ul>\n            <div class=\"brand-list__gradient list-gradient\"></div>\n            <button class=\"brand-list__button open-more-button brand-list__button--hidden\">Показать все</button>\n            <div class=\"swiper-pagination\"></div>\n        </div>\n        \n        </section>\n\n        <section>\n            <div class=\"list-header\">\n                <h2 class=\"list-header__text\">Ремонт различных видов техники</h2>\n            </div>\n\n            <div class=\"swiper list-container\">\n        \n                <ul class=\"swiper-wrapper repair-list list--close\">\n        \n                    <li class=\"swiper-slide repair-list__item\">\n                        <a href=\"#\">\n                            <span>Ремонт ноутбуков</span>\n                            <img src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"\">\n                        </a>\n                    </li>\n                    <li class=\"swiper-slide repair-list__item\">\n                        <a href=\"#\">\n                            <span>Ремонт планшетов</span>\n                            <img src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"\">\n                        </a>\n                    </li>\n                    <li class=\"swiper-slide repair-list__item\">\n                        <a href=\"#\">\n                            <span>Ремонт ПК</span>\n                            <img src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"\">\n                        </a>\n                    </li>\n                    <li class=\"swiper-slide repair-list__item\">\n                        <a href=\"#\">\n                            <span>Ремонт мониторов</span>\n                            <img src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"\">\n                        </a>\n                    </li>\n\n                    <li class=\"swiper-slide\"></li>\n        \n                </ul>\n                <div class=\"repair-list__gradient list-gradient\"></div>\n                <button class=\"repair-list__button open-more-button brand-list__button--hidden\">Показать все</button>\n                <div class=\"swiper-pagination\"></div>\n            </div>\n        </section>\n\n        <section>\n            <div class=\"list-header\">\n                <h2 class=\"list-header__text\">Цены на услуги</h2>\n            </div>\n\n            \n\n            <div class=\"swiper list-container\">\n                <ul class=\"services-header\">\n                    <li>Ремонтные услуги</li>\n                    <li>Цена</li>\n                    <li>Срок</li>\n                </ul>\n        \n                <ul class=\"swiper-wrapper services-list list--close\">\n        \n                    <li class=\"swiper-slide services-list__item\">\n                        <div class=\"services-list__container\">\n                            <div>\n                                <div class=\"services-list__header\">Ремонтные услуги</div>\n                                Диагностика\n                            </div>\n                            <div>\n                                <div class=\"services-list__header\">Цена</div>\n                                Бесплатно\n                            </div>\n                            <div>\n                                <div class=\"services-list__header\">Срок</div>\n                                30 мин\n                            </div>\n                            <button class=\"services-list__button\">\n                                <span>Заказать</span>\n                            </button>\n                        </div>\n                    </li>\n                    <li class=\"swiper-slide services-list__item\">\n                        <div class=\"services-list__container\">\n                            <div>\n                                <div class=\"services-list__header\">Ремонтные услуги</div>\n                                Замена дисплея\n                            </div>\n                            <div>\n                                <div class=\"services-list__header\">Цена</div>\n                                1000 ₽\n                            </div>\n                            <div>\n                                <div class=\"services-list__header\">Срок</div>\n                                30-120 мин\n                            </div>\n                            <button class=\"services-list__button\">\n                                <span>Заказать</span>\n                            </button>\n                        </div>\n                    </li>\n                    <li class=\"swiper-slide services-list__item\">\n                        <div class=\"services-list__container\">\n                            <div>\n                                <div class=\"services-list__header\">Ремонтные услуги</div>\n                                Тестирование с выдачей технического заключения\n                            </div>\n                            <div>\n                                <div class=\"services-list__header\">Цена</div>\n                                Бесплатно\n                            </div>\n                            <div>\n                                <div class=\"services-list__header\">Срок</div>\n                                30-120 мин\n                            </div>\n                            <button class=\"services-list__button\">\n                                <span>Заказать</span>\n                            </button>\n                        </div>\n                    </li>\n                    <li class=\"swiper-slide services-list__item\">\n                        <div class=\"services-list__container\">\n                            <div>\n                                <div class=\"services-list__header\">Ремонтные услуги</div>\n                                Тестирование с выдачей технического заключения\n                            </div>\n                            <div>\n                                <div class=\"services-list__header\">Цена</div>\n                                Бесплатно\n                            </div>\n                            <div>\n                                <div class=\"services-list__header\">Срок</div>\n                                30-120 мин\n                            </div>\n                            <button class=\"services-list__button\">\n                                <span>Заказать</span>\n                            </button>\n                        </div>\n                    </li>\n                    <li class=\"swiper-slide services-list__item\">\n                        <div class=\"services-list__container\">\n                            <div>\n                                <div class=\"services-list__header\">Ремонтные услуги</div>\n                                Тестирование с выдачей технического заключения\n                            </div>\n                            <div>\n                                <div class=\"services-list__header\">Цена</div>\n                                Бесплатно\n                            </div>\n                            <div>\n                                <div class=\"services-list__header\">Срок</div>\n                                30-120 мин\n                            </div>\n                            <button class=\"services-list__button\">\n                                <span>Заказать</span>\n                            </button>\n                        </div>\n                    </li>\n\n                    <li class=\"swiper-slide\"></li>\n        \n                </ul>\n                <div class=\"services-list__gradient list-gradient\"></div>\n                <div class=\"swiper-pagination\"></div>\n            </div>\n\n        </section>\n    </main>\n    <footer>\n        \n    </footer>\n</body>\n</html>";
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
+
+/***/ }),
+
+/***/ "./sass/main.sass":
+/*!************************!*\
+  !*** ./sass/main.sass ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./assets/brend_icon.svg":
+/*!*******************************!*\
+  !*** ./assets/brend_icon.svg ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/brend_icon.svg";
+
+/***/ }),
+
+/***/ "./assets/cps_logo.svg":
+/*!*****************************!*\
+  !*** ./assets/cps_logo.svg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/cps_logo.svg";
+
+/***/ }),
+
+/***/ "./img/bosh.png":
+/*!**********************!*\
+  !*** ./img/bosh.png ***!
+  \**********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/bosh.png";
+
+/***/ }),
+
+/***/ "./img/lenovo.png":
+/*!************************!*\
+  !*** ./img/lenovo.png ***!
+  \************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/lenovo.png";
+
+/***/ }),
+
+/***/ "./img/samsung.png":
+/*!*************************!*\
+  !*** ./img/samsung.png ***!
+  \*************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/samsung.png";
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/chunk loaded */
+/******/ 	(() => {
+/******/ 		var deferred = [];
+/******/ 		__webpack_require__.O = (result, chunkIds, fn, priority) => {
+/******/ 			if(chunkIds) {
+/******/ 				priority = priority || 0;
+/******/ 				for(var i = deferred.length; i > 0 && deferred[i - 1][2] > priority; i--) deferred[i] = deferred[i - 1];
+/******/ 				deferred[i] = [chunkIds, fn, priority];
+/******/ 				return;
+/******/ 			}
+/******/ 			var notFulfilled = Infinity;
+/******/ 			for (var i = 0; i < deferred.length; i++) {
+/******/ 				var [chunkIds, fn, priority] = deferred[i];
+/******/ 				var fulfilled = true;
+/******/ 				for (var j = 0; j < chunkIds.length; j++) {
+/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every((key) => (__webpack_require__.O[key](chunkIds[j])))) {
+/******/ 						chunkIds.splice(j--, 1);
+/******/ 					} else {
+/******/ 						fulfilled = false;
+/******/ 						if(priority < notFulfilled) notFulfilled = priority;
+/******/ 					}
+/******/ 				}
+/******/ 				if(fulfilled) {
+/******/ 					deferred.splice(i--, 1)
+/******/ 					var r = fn();
+/******/ 					if (r !== undefined) result = r;
+/******/ 				}
+/******/ 			}
+/******/ 			return result;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		__webpack_require__.p = "";
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
+/******/ 		
+/******/ 		// install a JSONP callback for chunk loading
+/******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
+/******/ 			var [chunkIds, moreModules, runtime] = data;
+/******/ 			// add "moreModules" to the modules object,
+/******/ 			// then flag all "chunkIds" as loaded and fire callback
+/******/ 			var moduleId, chunkId, i = 0;
+/******/ 			if(chunkIds.some((id) => (installedChunks[id] !== 0))) {
+/******/ 				for(moduleId in moreModules) {
+/******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
+/******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
+/******/ 					}
+/******/ 				}
+/******/ 				if(runtime) var result = runtime(__webpack_require__);
+/******/ 			}
+/******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
+/******/ 			for(;i < chunkIds.length; i++) {
+/******/ 				chunkId = chunkIds[i];
+/******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
+/******/ 					installedChunks[chunkId][0]();
+/******/ 				}
+/******/ 				installedChunks[chunkId] = 0;
+/******/ 			}
+/******/ 			return __webpack_require__.O(result);
+/******/ 		}
+/******/ 		
+/******/ 		var chunkLoadingGlobal = self["webpackChunk"] = self["webpackChunk"] || [];
+/******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
+/******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_html-loader_dist_runtime_getUrl_js-node_modules_normalize_css_normalize_-ebf99d"], () => (__webpack_require__("./js/main.js")))
+/******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
+/******/ 	
+/******/ })()
+;
+//# sourceMappingURL=main.js.map
