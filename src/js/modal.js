@@ -22,7 +22,7 @@ let buttonClickFeedback = function (item) {
     modalContainer.classList.add("modal-container--blur"); /**/
     sidebar.classList.remove("sidebar--open");
     modalFeedbackCloseButton.classList.add(
-      "modal-feedback__close-button--open"
+      "modal__close-button--open"
     );
   });
 };
@@ -35,7 +35,7 @@ modalFeedbackCloseButton.addEventListener("click", function () {
   modalFeedback.classList.remove("modal-feedback--open");
   modalContainer.classList.remove("modal-container--blur"); /**/
   modalFeedbackCloseButton.classList.remove(
-    "modal-feedback__close-button--open"
+    "modal__close-button--open"
   );
 });
 
@@ -46,7 +46,7 @@ modalContainer.addEventListener("click", function (evt) {
     modalFeedback.classList.remove("modal-feedback--open");
     modalContainer.classList.remove("modal-container--blur"); /**/
     modalFeedbackCloseButton.classList.remove(
-      "modal-feedback__close-button--open"
+      "modal__close-button--open"
     );
   }
 });
@@ -58,7 +58,7 @@ let buttonClickCall = function (item) {
     sidebarContainer.classList.remove("sidebar-container--blur");
     modalContainer.classList.add("modal-container--blur"); /**/
     sidebar.classList.remove("sidebar--open");
-    modalCallCloseButton.classList.add("modal-call__close-button--open");
+    modalCallCloseButton.classList.add("modal__close-button--open");
   });
 };
 
@@ -69,7 +69,7 @@ for (let i = 0; i < modalCallOpenButton.length; i++) {
 modalCallCloseButton.addEventListener("click", function () {
   modalCall.classList.remove("modal-call--open");
   modalContainer.classList.remove("modal-container--blur"); /**/
-  modalCallCloseButton.classList.remove("modal-call__close-button--open");
+  modalCallCloseButton.classList.remove("modal__close-button--open");
 });
 
 modalContainer.addEventListener("click", function (evt) {
@@ -78,7 +78,7 @@ modalContainer.addEventListener("click", function (evt) {
   ) {
     modalCall.classList.remove("modal-call--open");
     modalContainer.classList.remove("modal-container--blur"); /**/
-    modalCallCloseButton.classList.remove("modal-call__close-button--open");
+    modalCallCloseButton.classList.remove("modal__close-button--open");
   }
 });
 

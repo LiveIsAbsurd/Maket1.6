@@ -14,13 +14,13 @@
             <h2 class="modal__header">Обратная связь</h2>
 
             <form action="#" id="feedback">
-                <input name="name" type="text" placeholder="Имя">
-                <input name="phone" type="text" placeholder="Телефон">
-                <input name="mail" type="text" placeholder="Электронная почта">
-                <input name="message" type="text" placeholder="Сообщение">
+                <input form="feedback" name="name" type="text" placeholder="Имя">
+                <input form="feedback" name="phone" type="text" placeholder="Телефон">
+                <input form="feedback" name="mail" type="text" placeholder="Электронная почта">
+                <input form="feedback" name="message" type="text" placeholder="Сообщение">
             </form>
             <p>Нажимая “отправить”, вы даете согласие на <a>обработку персональных данных</a> и соглашаетесь с нашей <a>политикой конфиденциальности</a></p>
-            <button form="#feedback" type="submit" class="send-button modal__send-button"><span>Отправить</span></button>
+            <button form="feedback" type="submit" class="send-button modal__send-button"><span>Отправить</span></button>
         </div>
 
         <div class="modal modal-call">
@@ -28,10 +28,10 @@
             <h2 class="modal__header">Заказать звонок</h2>
 
             <form action="#" id="call">
-                <input name="phone" type="text" placeholder="Телефон">
+                <input form="call" name="phone" type="text" placeholder="Телефон">
             </form>
             <p>Нажимая “отправить”, вы даете согласие на <a>обработку персональных данных</a> и соглашаетесь с нашей <a>политикой конфиденциальности</a></p>
-            <button form="#call" type="submit" class="send-button modal__send-button"><span>Отправить</span></button>
+            <button form="call" type="submit" class="send-button modal__send-button"><span>Отправить</span></button>
         </div>
 
     </div>
@@ -150,7 +150,7 @@
             <h2 class="list-header__text">Ремонт техники различных брендов</h2>
         </div>
         
-        <div class="swiper list-container">
+        <div class="swiper list-container brand">
         
             <ul class="swiper-wrapper brand-list list--close">
     
@@ -225,7 +225,7 @@
     
             </ul>
             <div class="brand-list__gradient list-gradient"></div>
-            <button class="brand-list__button open-more-button brand-list__button--hidden">Показать все</button>
+            <button class="brand-list__button open-more-button open-more-button--hidden">Показать все</button>
             <div class="swiper-pagination"></div>
         </div>
         
@@ -236,7 +236,7 @@
                 <h2 class="list-header__text">Ремонт различных видов техники</h2>
             </div>
 
-            <div class="swiper list-container">
+            <div class="swiper list-container repair">
         
                 <ul class="swiper-wrapper repair-list list--close">
         
@@ -269,7 +269,7 @@
         
                 </ul>
                 <div class="repair-list__gradient list-gradient"></div>
-                <button class="repair-list__button open-more-button brand-list__button--hidden">Показать все</button>
+                <button class="repair-list__button open-more-button open-more-button--hidden">Показать все</button>
                 <div class="swiper-pagination"></div>
             </div>
         </section>

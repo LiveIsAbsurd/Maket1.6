@@ -19,6 +19,8 @@
             border: 1px solid $brand-list-item-border-color
             border-radius: 6px
             color: $header-bg-color
+            &:hover
+                opacity: 0.6
             
             span
                 font-family: 'TT Lakes'
@@ -66,7 +68,7 @@
             height: 170px
 
         &--open 
-            height: max-content
+            height: fit-content
 
         &__button--hidden 
             display: block
@@ -84,10 +86,7 @@
     .repair-list 
         grid-template-columns: 240px 240px 240px
 
-@media (min-width: 1350px) 
-    .repair-list 
-        grid-template-columns: 240px 240px 240px 240px 
 
-@media (min-width: 1440px) 
+@media (min-width: 1420px) 
     .repair-list 
         grid-template-columns: 240px 240px 240px 240px

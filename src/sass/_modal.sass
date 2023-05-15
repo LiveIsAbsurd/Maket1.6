@@ -61,11 +61,13 @@
         color: $footer-text-color
         a
             color: $button-color
-
+            cursor: pointer
+            &:hover
+                opacity: 0.7
 
 @media (min-width: 1440px)
-    .modal-feedback
-        box-shadow: -1px 0 0 0 $shadow-color
+    .modal
+        box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
         width: 440px
         padding: 40px 32px
         &__close-button

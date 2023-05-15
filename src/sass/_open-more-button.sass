@@ -6,6 +6,8 @@
     line-height: 24px
     letter-spacing: -0.2px
     color: $text-color
+    &--hidden 
+            display: none
     &:hover
         color: $menu-item-color
     &::before 
@@ -16,6 +18,13 @@
         width: 7px
         height: 10px
         margin-right: 16px
+
+        transition: transform 0.5s
     
     &--open::before
         transform: rotate(180deg)
+
+@media (min-width: 500px)
+    .open-more-button
+        &--hidden 
+            display: block
