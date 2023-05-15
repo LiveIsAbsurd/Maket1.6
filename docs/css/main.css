@@ -644,6 +644,7 @@
     height: 200px;
     background-color: #ffffff;
     padding: 16px;
+    border-radius: 6px;
     border: 1px solid #EAEAEA;
     color: #ffffff; }
     .services-list__container > div {
