@@ -1,6 +1,6 @@
 .sidebar 
     position: fixed
-    z-index: 100
+    z-index: 50
     width: 320px
     height: 100%
     background-color: $header-bg-color
@@ -13,14 +13,12 @@
     &--open
         position: fixed
         transform: translateX(0)
-        backdrop-filter: blur(1000px)
-
-    .side--blur
-        width: 1000px
-        height: 1000px
-        opacity: 0.8
+    
 
 @media (min-width: 1120px) 
     .sidebar 
         transform: translateX(0)
         box-shadow: none
+        &--blur
+            transition: opacity 0.3s
+            opacity: 0.1

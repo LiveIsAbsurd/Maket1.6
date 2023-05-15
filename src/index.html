@@ -8,6 +8,34 @@
 </head>
 <body class="body">
 
+    <div class="modal-container">
+        <div class="modal modal-feedback">
+            <button class="button button--icon-close modal__close-button"></button>
+            <h2 class="modal__header">Обратная связь</h2>
+
+            <form action="#" id="feedback">
+                <input name="name" type="text" placeholder="Имя">
+                <input name="phone" type="text" placeholder="Телефон">
+                <input name="mail" type="text" placeholder="Электронная почта">
+                <input name="message" type="text" placeholder="Сообщение">
+            </form>
+            <p>Нажимая “отправить”, вы даете согласие на <a>обработку персональных данных</a> и соглашаетесь с нашей <a>политикой конфиденциальности</a></p>
+            <button form="#feedback" type="submit" class="send-button modal__send-button"><span>Отправить</span></button>
+        </div>
+
+        <div class="modal modal-call">
+            <button class="button button--icon-close modal__close-button"></button>
+            <h2 class="modal__header">Заказать звонок</h2>
+
+            <form action="#" id="call">
+                <input name="phone" type="text" placeholder="Телефон">
+            </form>
+            <p>Нажимая “отправить”, вы даете согласие на <a>обработку персональных данных</a> и соглашаетесь с нашей <a>политикой конфиденциальности</a></p>
+            <button form="#call" type="submit" class="send-button modal__send-button"><span>Отправить</span></button>
+        </div>
+
+    </div>
+
     <div class="sidebar-container">
         <div class="sidebar">
             <header class="sidebar-header">
@@ -36,7 +64,7 @@
             
             <div class="sidebar-footer">
                 <button class="button button--icon-call"></button>
-                <button class="button button--icon-message"></button>
+                <button class="button button--icon-feedback"></button>
                 <button class="button button--icon-contacts"></button>
             
                 <div class="sidebar-footer__mail">mail@cps.com</div>
@@ -60,10 +88,10 @@
 
         <div class="header__right">
             <button class="button button--icon-call button--display-isHidden"></button>
-            <button class="button button--icon-message button--display-isHidden"></button>
+            <button class="button button--icon-feedback button--display-isHidden"></button>
             <button class="button button--icon-contacts button--display-isHidden"></button>
             
-            <button class="button button--icon-feedback"></button>
+            <button class="button button--icon-application"></button>
             <button class="button button--icon-status"></button>
         </div>
     </header>
@@ -75,7 +103,7 @@
             <div class="main-button-container">
                 <button>
                     <span>Оставить заявку</span>
-                    <i class="button button--icon-feedback"></i>
+                    <i class="button button--icon-application"></i>
                 </button>
                 <button>
                     <span>Статус ремонта</span>
@@ -372,7 +400,16 @@
 
         </section>
     </main>
-    <footer>
+
+    <footer class="footer">
+        <div>
+            <p class="footer__copyright">© 2019 CPS</p>
+            <p class="footer__creator">Разработано командой Apesong </p>
+        </div>
+
+        <a href="#" class="footer__confid">Политика конфиденциальности</a>
+
+        <p class="footer__offer">Информация, размещенная на данной странице, не является публичной офертой</p>
         
     </footer>
 </body>
