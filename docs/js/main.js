@@ -138,43 +138,43 @@ sidebarContainer.addEventListener("click", function (evt) {
   \************************/
 /***/ (() => {
 
-var textBlock = document.querySelector('.text-block');
-var textBlockText = document.querySelector('.text-block__text');
-var textBlockButton = textBlock.querySelector('.text-block__button');
-var brandListContainer = document.querySelector('.brand');
-var brandList = brandListContainer.querySelector('.brand-list');
-var brandListButton = brandListContainer.querySelector('.brand-list__button');
-var repairListContainer = document.querySelector('.repair');
-var repairList = repairListContainer.querySelector('.repair-list');
-var repairListButton = repairListContainer.querySelector('.repair-list__button');
-textBlockButton.addEventListener('click', function () {
-  textBlockText.classList.toggle('text-block__text--open');
-  textBlockButton.classList.toggle('open-more-button--open');
+var textBlock = document.querySelector(".text-block");
+var textBlockText = document.querySelector(".text-block__text");
+var textBlockButton = textBlock.querySelector(".text-block__button");
+var brandListContainer = document.querySelector(".brand");
+var brandList = brandListContainer.querySelector(".brand-list");
+var brandListButton = brandListContainer.querySelector(".brand-list__button");
+var repairListContainer = document.querySelector(".repair");
+var repairList = repairListContainer.querySelector(".repair-list");
+var repairListButton = repairListContainer.querySelector(".repair-list__button");
+textBlockButton.addEventListener("click", function () {
+  textBlockText.classList.toggle("text-block__text--open");
+  textBlockButton.classList.toggle("open-more-button--open");
 
-  if (textBlockButton.classList.contains('open-more-button--open')) {
-    textBlockButton.textContent = 'Скрыть';
+  if (textBlockButton.classList.contains("open-more-button--open")) {
+    textBlockButton.textContent = "Скрыть";
   } else {
-    textBlockButton.textContent = 'Читать далее';
+    textBlockButton.textContent = "Читать далее";
   }
 });
-brandListButton.addEventListener('click', function () {
-  brandList.classList.toggle('brand-list--open');
-  brandListButton.classList.toggle('open-more-button--open');
+brandListButton.addEventListener("click", function () {
+  brandList.classList.toggle("brand-list--open");
+  brandListButton.classList.toggle("open-more-button--open");
 
-  if (brandListButton.classList.contains('open-more-button--open')) {
-    brandListButton.textContent = 'Скрыть';
+  if (brandListButton.classList.contains("open-more-button--open")) {
+    brandListButton.textContent = "Скрыть";
   } else {
-    brandListButton.textContent = 'Показать все';
+    brandListButton.textContent = "Показать все";
   }
 });
-repairListButton.addEventListener('click', function () {
-  repairList.classList.toggle('repair-list--open');
-  repairListButton.classList.toggle('open-more-button--open');
+repairListButton.addEventListener("click", function () {
+  repairList.classList.toggle("repair-list--open");
+  repairListButton.classList.toggle("open-more-button--open");
 
-  if (repairListButton.classList.contains('open-more-button--open')) {
-    repairListButton.textContent = 'Скрыть';
+  if (repairListButton.classList.contains("open-more-button--open")) {
+    repairListButton.textContent = "Скрыть";
   } else {
-    repairListButton.textContent = 'Показать все';
+    repairListButton.textContent = "Показать все";
   }
 });
 

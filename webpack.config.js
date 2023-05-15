@@ -120,7 +120,17 @@ module.exports = {
                             /*hmr: isDev*/
                         },
                     },
-                    "css-loader"
+                    "css-loader",
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                          postcssOptions: {
+                            plugins: [
+                              ['autoprefixer']
+                            ]
+                          }
+                        }
+                    }
                 ],
             },
             {
