@@ -6,11 +6,11 @@
     height: 100%
     right: 0
     background-color: $header-bg-color
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2)
     
     padding: 24px 16px 16px 16px
 
     transform: translateX(441px)
-
     transition: transform 0.3s
 
     &__send-button
@@ -67,9 +67,10 @@
 
 @media (min-width: 1440px)
     .modal
-        box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
         width: 440px
         padding: 40px 32px
+
+        border-left: 1px solid $shadow-color
         &__close-button
           display: none
           position: absolute
