@@ -19,6 +19,8 @@
         text-decoration: none
         &:hover
             color: $sidebar-active-color
+    &__confid, &__offer
+        margin-top: 16px
     
 
 @media (min-width: 768px)
@@ -27,6 +29,8 @@
         grid-template-columns: 1fr 1fr 1fr
         &__copyright, &__creator, &__confid, &__offer
             text-align: unset
+        &__confid, &__offer
+            margin-top: 0
         &__offer
             text-align: end
 
