@@ -805,6 +805,8 @@
     text-decoration: none; }
     .footer__confid:hover {
       color: #444444; }
+  .footer__confid, .footer__offer {
+    margin-top: 16px; }
 
 @media (min-width: 768px) {
   .footer {
@@ -812,6 +814,8 @@
     grid-template-columns: 1fr 1fr 1fr; }
     .footer__copyright, .footer__creator, .footer__confid, .footer__offer {
       text-align: unset; }
+    .footer__confid, .footer__offer {
+      margin-top: 0; }
     .footer__offer {
       text-align: end; } }
 
