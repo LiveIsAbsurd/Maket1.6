@@ -27,8 +27,6 @@
     &__button 
         margin-top: 16px
 
-
-
     &__gradient 
         position: absolute
         top: 0
@@ -41,18 +39,19 @@
     .brand-list
         display: grid
         grid-template-columns: 220px 220px
-        grid-column-gap: 24px
+        grid-column-gap: 16px
         grid-row-gap: 16px
         justify-content: center
         align-items: center
 
         overflow: hidden
 
+        &__item
+            a
+                width: 224px
+
         &__gradient 
             display: none
-        
-        &__item 
-            width: auto
         
         &--close 
             height: 170px
@@ -67,7 +66,6 @@
 @media (min-width: 1070px) 
     .brand-list 
         grid-template-columns: 240px 240px 240px 240px
-        grid-column-gap: 32px
     
 @media (min-width: 1120px)
     .brand-list 
