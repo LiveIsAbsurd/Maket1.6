@@ -1,3 +1,4 @@
+let body = document.querySelector("body");
 let sidebarContainer = document.querySelector(".sidebar-container");
 let sidebar = sidebarContainer.querySelector(".sidebar");
 let modalContainer = document.querySelector(".modal-container");
@@ -24,6 +25,7 @@ let buttonClickFeedback = function (item) {
     modalFeedbackCloseButton.classList.add(
       "modal__close-button--open"
     );
+    body.classList.add("body--overflowIsHidden");
   });
 };
 
@@ -37,6 +39,7 @@ modalFeedbackCloseButton.addEventListener("click", function () {
   modalFeedbackCloseButton.classList.remove(
     "modal__close-button--open"
   );
+  body.classList.remove("body--overflowIsHidden");
 });
 
 modalContainer.addEventListener("click", function (evt) {
@@ -48,6 +51,7 @@ modalContainer.addEventListener("click", function (evt) {
     modalFeedbackCloseButton.classList.remove(
       "modal__close-button--open"
     );
+    body.classList.remove("body--overflowIsHidden");
   }
 });
 
@@ -59,6 +63,7 @@ let buttonClickCall = function (item) {
     modalContainer.classList.add("modal-container--blur"); /**/
     sidebar.classList.remove("sidebar--open");
     modalCallCloseButton.classList.add("modal__close-button--open");
+    body.classList.add("body--overflowIsHidden");
   });
 };
 
@@ -70,6 +75,7 @@ modalCallCloseButton.addEventListener("click", function () {
   modalCall.classList.remove("modal-call--open");
   modalContainer.classList.remove("modal-container--blur"); /**/
   modalCallCloseButton.classList.remove("modal__close-button--open");
+  body.classList.remove("body--overflowIsHidden");
 });
 
 modalContainer.addEventListener("click", function (evt) {
@@ -79,6 +85,7 @@ modalContainer.addEventListener("click", function (evt) {
     modalCall.classList.remove("modal-call--open");
     modalContainer.classList.remove("modal-container--blur"); /**/
     modalCallCloseButton.classList.remove("modal__close-button--open");
+    body.classList.remove("body--overflowIsHidden");
   }
 });
 
@@ -86,11 +93,13 @@ modalContainer.addEventListener("click", function (evt) {
 sidebarOpenButton.addEventListener("click", function () {
   sidebarContainer.classList.add("sidebar-container--blur");
   sidebar.classList.add("sidebar--open");
+  body.classList.add("body--overflowIsHidden");
 });
 
 sidebarCloseButton.addEventListener("click", function () {
   sidebarContainer.classList.remove("sidebar-container--blur");
   sidebar.classList.remove("sidebar--open");
+  body.classList.remove("body--overflowIsHidden");
 });
 
 sidebarContainer.addEventListener("click", function (evt) {
@@ -101,5 +110,6 @@ sidebarContainer.addEventListener("click", function (evt) {
     modalFeedbackCloseButton.classList.remove(
       "modal-feedback__close-button--open"
     );
+    body.classList.remove("body--overflowIsHidden");
   }
 });
